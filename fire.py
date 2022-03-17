@@ -5,7 +5,7 @@ import urandom
 class Fire(object):
     def __init__(self, pin, fire_type="standard"):
         self.led = machine.PWM(machine.Pin(pin))
-        self.led.freq(980) # 490 or 980 Hz
+        self.led.freq(490) # 490 or 980 Hz
         self.fire_type = fire_type
         self.flicker_speed = self.get_flicker_speed()
         self.brightness = self.get_brightness()
