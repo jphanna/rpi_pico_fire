@@ -3,6 +3,4 @@ from fire import Fire
 my_lantern = Fire(15, "lantern")
 
 while True:
-    my_lantern.Flicker()
-
-    
+    my_lantern.flicker()

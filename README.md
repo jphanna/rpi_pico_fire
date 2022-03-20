@@ -1,5 +1,6 @@
 
 # rpi_pico_fire
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 A Raspbery Pi Pico library to quickly set up a through-hole LED to flicker, simulating a candle, lantern or fire light in a diorama. 
 
@@ -28,11 +29,11 @@ from fire import Fire
 my_lantern = Fire(15, "lantern")
 ```
 
-5. Using a `while True:` loop, run the `Flicker()` method:
+5. Using a `while True:` loop, run the `flicker()` method:
 
 ```python
 while True:
-    my_lantern.Flicker()
+    my_lantern.flicker()
 ```
 6. Run your micropython script on the Pico!
 
