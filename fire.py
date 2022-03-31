@@ -13,7 +13,7 @@ class Fire(object):
         self.current_millis = utime.ticks_ms()
 
     def _get_flicker_speed(self):
-        return urandom.randrange(100)  # 100ms
+        return urandom.randrange(200)  # 100ms
 
     def _get_brightness(self):
         if self.fire_type == "lantern":
