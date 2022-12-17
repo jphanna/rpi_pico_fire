@@ -2,7 +2,7 @@
 # rpi_pico_fire
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
-A Raspbery Pi Pico module to quickly set up a through-hole LED to flicker, simulating a candle, lantern or fire light in a diorama. 
+A Raspbery Pi Pico module to quickly set up a through-hole LED to flicker, simulating a candle, lantern or fire light in a diorama.
 
 > This won't work for Neopixels at the moment. This may be something I will try to implement.
 
@@ -15,7 +15,7 @@ A Raspbery Pi Pico module to quickly set up a through-hole LED to flicker, simul
 ## Usage
 1. Download fire.py
 2. Upload it to your Raspberry Pi Pico.
-3. Import the module into your script:
+3. Import the module into your script (i.e. main.py):
 
 ```python
 from fire import Fire
