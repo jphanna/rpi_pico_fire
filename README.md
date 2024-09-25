@@ -10,7 +10,7 @@ A Raspbery Pi Pico module to quickly set up a through-hole LED to flicker, simul
 | Arg | Notes |
 |---- | ----- |
 | pin | This can be any pin allowed by the Pico that can be set as a PWM output pin. **Please, understand the pulse-width modulaton block on the Pico.**|
-| fire_type | As of right now the types are: "*candle*", "*lantern*", and standard default type. More will be added if requested.|
+| fire_type | As of right now the types are: "*candle*", "*lantern*", "*fireplace*", and standard default type. More will be added if needed.|
 
 ## Usage
 1. Download fire.py
@@ -23,17 +23,21 @@ from fire import Fire
 
 4. Create your object. This requires:
     1. The GPIO pin you're going to use.
-    2. The type of light you want. If the type is left blank, it will just default to a built in choice.
+    2. The type of light you want. If the type is left blank, it will just default to a standard built in choice.
 
 ```python
-my_lantern = Fire(15, "lantern")
+my_fireplace = Fire(16, "fireplace")
 ```
 
 5. Using a `while True:` loop, run the `flicker()` method:
 
 ```python
-while True:
-    my_lantern.flicker()
+try:
+    while True:
+        my_fireplace.flicker()
+
+except KeyboardInterrupt:
+    my_fireplace.cleanup()
 ```
 6. Run your micropython script on the Pico!
 

@@ -1,6 +1,10 @@
 from fire import Fire
 
-my_lantern = Fire(15, "lantern")
+my_fireplace = Fire(16, "fireplace")
 
-while True:
-    my_lantern.flicker()
+try:
+    while True:
+        my_fireplace.flicker()
+
+except KeyboardInterrupt:
+    my_fireplace.cleanup()
