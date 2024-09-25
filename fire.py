@@ -16,12 +16,12 @@ class Fire(object):
         return random.randrange(10, 100)  # 10ms to 100ms
 
     def _get_brightness(self):
-        if self.fire_type == "lantern":
+        if self.fire_type == "fireplace":
+            return random.randrange(200, 65535)
+        elif self.fire_type == "lantern":
             return random.randrange(45000, 65535)  # 25000 to 65535
         elif self.fire_type == "candle":
             return random.randrange(2000, 8000)
-        elif self.fire_type == "fireplace":
-            return random.randrange(200, 65535)
         else:
             return random.randrange(34695, 65535)
 
